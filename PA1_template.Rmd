@@ -89,4 +89,5 @@ imputed_data_by_interval<-aggregate(steps ~ interval + day_type, imputed_data, m
 ##Plot
 qplot(interval,steps, data = imputed_data_by_interval,  geom=c("line"),  xlab="Interval",       ylab = "Number of steps",main = "Average number of steps taken on weekdays and weekends")+facet_wrap(~ day_type, ncol = 1)
 
+
 ```
